@@ -1,0 +1,109 @@
+// "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+header {
+	background-color: red;
+	color: white;
+	#logo {
+	  font-weight: 400;
+	  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	  font-size: 25px;
+	}
+	a {
+		color: white;
+		font-family: "Inconsolata", monospace, serif;
+	}
+	.nav>li>a:hover, .site-wide .nav>li>a:focus {
+    background-color: transparent !important;
+    color: white;
+    border-bottom: 2px solid white;
+	}
+	.navbar-header {
+		span.icon-bar {
+			background-color: white;
+		}
+	}
+	.navbar {
+		margin-bottom: 0;
+	}
+}
+
+.main-content {
+	background-color: #ddffff;
+	min-height: 500px;
+	.wrapper {
+		max-width: 750px;
+		margin: 0 auto;
+		padding: 45px;
+		.heading h1 {
+			margin: 0;
+		  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		  font-size: 95px;
+		  font-weight: 700;
+		  color: #222222;
+		  text-align: center;
+		}
+		.explanation {
+			margin-top: 30px;
+  		font-size: 19px;
+			p {
+				text-align: center;
+				font-family: "Inconsolata", monospace, serif;
+			}
+		}
+		table {
+			text-align: center;
+			box-shadow: 0 0 10px 2px rgba(0,0,0,0.1);
+			th {
+				text-align: center;
+			}
+			.app-academy {
+				background-color: red;
+				color: white;
+			}
+			.aa-box {
+				background-color: white;
+			}
+		}
+	}
+}
+
+footer {
+	background-color: #ddffff;
+	.bottom-nav {
+		padding: 50px 0;
+		p {
+			color: #999999;
+		  text-align: center;
+		  font-size: 11px;
+			a {
+				position: relative;
+			  z-index: 2;
+			  color: #999999;
+			  text-align: center;
+			  font-size: 11px;
+			  text-decoration: underline;
+			}
+		}
+	}
+}
+.button {
+	padding: 12px 20px;
+  font-size: 30px;
+  #btn-alt {
+	  padding: 10px 30px 10px 30px;
+	  border-radius: 0;
+	  letter-spacing: .1em;
+	  font-weight: 400;
+	  color: white;
+	  background: #00cc00;
+	  line-height: 1.0;
+	  border-bottom: 3px solid #00aa00;
+	  font-size: 30px;
+	  &:hover, :focus, :active {
+	    opacity: 0.95;
+	    background: #00aa00;
+	  }
+	}
+}

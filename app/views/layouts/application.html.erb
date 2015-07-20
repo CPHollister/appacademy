@@ -8,7 +8,15 @@
 </head>
 <body>
 
-<%= yield %>
+<%= render 'layouts/header' unless @disable_nav %>
+
+<div class="main-content container-fluid">
+	<div class="wrapper">
+		<%= yield %>
+	</div>
+</div>
+
+<%= render 'layouts/footer' unless @disable_nav %>
 
 </body>
 </html>

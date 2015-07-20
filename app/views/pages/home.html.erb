@@ -1,4 +1,102 @@
-<h2>Why Hire App Academy Students</h2>
-<p>
-  The time is now: <%= Time.now %>
-</p>
+<div class="heading">
+	<h1>Hire an <br />App Academy graduate</h2>
+</div>
+<div class="explanation">
+	<div class="intro">
+		<p class="text-left">We recruit CS, Economics, and Mechanical Engineering students from Harvard, Yale, UCLA and other top schools.</p>
+
+		<p>Over 12 weeks, we teach them:</p>
+			<ul>
+				<li>Javascript</li> 
+				<li>Ruby</li>
+				<li>Rails</li>
+				<li>SQL</li> 
+				<li>Backbone.js</li> 
+				<li>jQuery</li>
+				<li>CS fundamentals</li>
+			</ul>
+		</div>
+
+<br />
+
+<div class="why">
+
+	<p>Unlike other programs, App Academy is unique because it is specialized and merit-based. </p>
+</div>
+
+<br />
+	<div class="table-responsive">
+    <table class="table table-bordered">
+      <thead>
+      <tr>
+          <th></th>
+          <th class="app-academy">App Academy</th>
+          <th>General Assembly</th>
+          <th>Code Academy</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+          <td>Learn Web Dev</td>
+          <td class="check aa-box">&#x2713;</td>
+          <td class="check">&#x2713;</td>
+          <td class="check">&#x2713;</td>
+      </tr>
+      <tr>
+          <td>Merit-Based</td>
+          <td class="check aa-box">&#x2713;</td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+        <td>Specialized</td>
+        <td class="check aa-box">&#x2713;</td>
+        <td></td>
+        <td></td>
+      </tr>
+      </tbody>
+    </table>
+</div>
+
+
+	<p>By the time our students finish the program, they are some of the most highly coveted programmers in the country.</p>
+
+	<div class="employers">
+
+	<p>Currently, the following companies hire our students right at graduation: </p><br><br>
+		<div class="row">
+			<div class="col-sm-4">
+				<%= image_tag "google.png", class: "img-responsive" %>
+			</div>
+			<div class="col-sm-4">
+				<%= image_tag "facebook.png", class: "img-responsive" %>
+			</div>
+			<div class="col-sm-4">
+				<%= image_tag "linkedin.png", class: "img-responsive" %>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-sm-4">
+				<%= image_tag "tumblr.png", class: "img-responsive" %>
+			</div>
+			<div class="col-sm-4">
+				<%= image_tag "square.png", class: "img-responsive" %>
+			</div>
+			<div class="col-sm-4">
+				<%= image_tag "paypal.png", class: "img-responsive" %>
+			</div>
+		</div>
+	</div>
+
+	<br><br>
+
+	<p>In today's war for talent the ability to hire the best and brightest is a core advantage.</p>
+
+	<p>Want to <u>find out how you can hire our students</u> <strong><br>before anyone else</strong>?</p>
+
+</div>
+
+<div class="button text-center">
+  <%= button_to('Yes, tell me how!', why_path, :class => 'btn btn-lg', :id => 'btn-alt', :method => :get) %>
+</div>
